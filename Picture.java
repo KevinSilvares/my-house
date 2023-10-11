@@ -76,6 +76,51 @@ public class Picture
         
     }
 
+    
+     public void amanecer()
+    {
+    moon.moveHorizontal(-150);
+    moon.moveVertical(200);
+    moon.changeSize(40);
+    moon.changeColor("magenta");
+    moon.makeInvisible();
+        
+    wall = new Square();
+    wall.moveHorizontal(-140);
+    wall.moveVertical(20);
+    wall.changeSize(120);
+    wall.makeVisible();
+        
+    window = new Square();
+    window.changeColor("black");
+    window.moveHorizontal(-120);
+    window.moveVertical(40);
+    window.changeSize(40);
+    window.makeVisible();
+
+    roof = new Triangle();  
+    roof.changeSize(60, 180);
+    roof.moveHorizontal(20);
+    roof.moveVertical(-60);
+    roof.makeVisible();
+        
+    hierba = new Square();
+    hierba.changeColor("green");
+    hierba.moveHorizontal(-350);
+    hierba.moveVertical(120);
+    hierba.changeSize(700);
+    hierba.makeVisible();
+
+    sun = new Circle();
+    sun.changeColor("yellow");
+    sun.moveHorizontal(-200);
+    sun.moveVertical(300);
+    sun.changeSize(80);
+    sun.makeVisible();
+    sun.slowMoveVertical(-350);
+    
+} 
+    
     /**
      * Change this picture to black/white display
      */
